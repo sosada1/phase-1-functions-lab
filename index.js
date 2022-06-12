@@ -1,35 +1,29 @@
 // Code your solution in this file!
-function distanceFromHqInBlocks(location){
-    if (location > 42) { 
-       return location - 42; 
-    } else {
-       return 42 - location;
-    }
 
+
+function distanceFromHqInBlocks(block) {
+   // returns the number of blocks given a value
+if (block> 42) {
+   return block - 42 ;
+} else { 
+   return 42 - block;
 }
-function distanceFromHqInFeet(location){
-   console.log (distanceFromHqInBlocks(location)* 264);
-   return distanceFromHqInBlocks(location) * 264
+   
 }
-
-function distanceTravelledInFeet(start, destination){
-   if (destination > start) {
-   return (destination - start) * 264;
-   } else {
-      return (start - destination) * 264;
-   }  
+function distanceFromHqInFeet(feet){
+ distanceFromHqInBlocks(block);
+ if (block * 264 > 42 * 264) {
+   return (block * 264 - 42 * 264);
+} else { 
+   return (42 * 264 - block) * 264;
 }
-
-function calculatesFarePrice(start, destination){
-   if (destination - start <= 400) {
-   return 'gives customer a free sample';
-   } else if (destination - start > 400 && desination < 2000) {
-      return "2 cents per foot, not including the first 400";
-   } else if (destination - start > 2000 && destination < 2500) {
-      return 'charges 25 dollars for distance over 2000 feet';
-   } else if (destination -start > 2500) {
-      return 'cannot travel that far';
-   }
 }
-
-
+   //call the distanceFromHqInBlocks function from inside he distancefromHqInFeet function, 
+   // passing the argument from distanceFromHqIn Feet into distanceFromHqInBlocks
+   // the return value of distanceFromHqInBlocks can then be used to calculate feet
+function distanceTraveledInFeet(start, destination) {
+   //returns the number of feet traveled
+}
+function calculatesFarePrice(start, destination) {
+   // returns the fare for the customer 
+}c
